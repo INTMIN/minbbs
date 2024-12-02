@@ -14,7 +14,9 @@
     "isbot": "^5.1.17",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router": "^7.0.1"
+    "react-markdown": "^9.0.1",
+    "react-router": "^7.0.1",
+    "rehype-highlight": "^7.0.1"
   },
   "devDependencies": {
     "@react-router/dev": "^7.0.1",
