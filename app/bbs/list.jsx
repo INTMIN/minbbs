@@ -1,15 +1,17 @@
 import { Listbox, ListboxItem } from "@nextui-org/react";
 import { IconWrapper } from "../components/IconWrapper";
 import { ItemCounter } from "../components/ItemCounter";
-import { BugIcon } from "../components/Icon/BugIcon";
-import { PullRequestIcon } from "../components/Icon/PullRequestIcon";
-import { ChatIcon } from "../components/Icon/ChatIcon";
-import { PlayCircleIcon } from "../components/Icon/PlayCircleIcon";
-import { LayoutIcon } from "../components/Icon/LayoutIcon";
-import { TagIcon } from "../components/Icon/TagIcon";
-import { UsersIcon } from "../components/Icon/UsersIcon";
-import { WatchersIcon } from "../components/Icon/WatchersIcon";
-import { BookIcon } from "../components/Icon/BookIcon";
+import {
+  BugIcon,
+  PullRequestIcon,
+  ChatIcon,
+  PlayCircleIcon,
+  LayoutIcon,
+  TagIcon,
+  UsersIcon,
+  BookIcon,
+  WatchersIcon,
+} from "../components/Icon/MyIcon";
 
 export default function List() {
   return (
