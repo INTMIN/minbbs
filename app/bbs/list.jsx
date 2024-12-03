@@ -1,15 +1,15 @@
 import { Listbox, ListboxItem } from "@nextui-org/react";
 import { IconWrapper } from "../components/IconWrapper";
 import { ItemCounter } from "../components/ItemCounter";
-import { BugIcon } from "../components/icon/BugIcon";
-import { PullRequestIcon } from "../components/icon/PullRequestIcon";
-import { ChatIcon } from "../components/icon/ChatIcon";
-import { PlayCircleIcon } from "../components/icon/PlayCircleIcon";
-import { LayoutIcon } from "../components/icon/LayoutIcon";
-import { TagIcon } from "../components/icon/TagIcon";
-import { UsersIcon } from "../components/icon/UsersIcon";
-import { WatchersIcon } from "../components/icon/WatchersIcon";
-import { BookIcon } from "../components/icon/BookIcon";
+import { BugIcon } from "../components/Icon/BugIcon";
+import { PullRequestIcon } from "../components/Icon/PullRequestIcon";
+import { ChatIcon } from "../components/Icon/ChatIcon";
+import { PlayCircleIcon } from "../components/Icon/PlayCircleIcon";
+import { LayoutIcon } from "../components/Icon/LayoutIcon";
+import { TagIcon } from "../components/Icon/TagIcon";
+import { UsersIcon } from "../components/Icon/UsersIcon";
+import { WatchersIcon } from "../components/Icon/WatchersIcon";
+import { BookIcon } from "../components/Icon/BookIcon";
 
 export default function List() {
   return (
