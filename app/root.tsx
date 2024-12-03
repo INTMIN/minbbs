@@ -6,7 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-import {NextUIProvider} from '@nextui-org/react'
+import { NextUIProvider } from "@nextui-org/react";
 
 import type { Route } from "./+types/root";
 import stylesheet from "./app.css?url";
@@ -38,13 +38,18 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
         <ScrollRestoration />
         <Scripts />
+        <script src="https://fastly.jsdelivr.net/gh/INTMIN/live2d-widget@latest/autoload.js"></script>
       </body>
     </html>
   );
 }
 
 export default function App() {
-  return <NextUIProvider><Outlet /></NextUIProvider>;
+  return (
+    <NextUIProvider>
+      <Outlet />
+    </NextUIProvider>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
