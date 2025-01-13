@@ -38,7 +38,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
         <ScrollRestoration />
         <Scripts />
-        <script src="https://fastly.jsdelivr.net/gh/INTMIN/live2d-widget@latest/autoload.js"></script>
+        <script src="https://intmin.github.io/live2d-widget/autoload.js"></script>
         <script
           type="text/javascript"
           src="https://intmin.github.io/openJS/spider.js"
