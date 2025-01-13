@@ -30,7 +30,7 @@ export default function List() {
         }}
       >
         <ListboxItem
-          key="first"
+          key="react-class-swiper"
           endContent={<ItemCounter number={13} />}
           startContent={
             <IconWrapper className="bg-success/10 text-success">
@@ -41,7 +41,7 @@ export default function List() {
           react class版本的swiper实现
         </ListboxItem>
         <ListboxItem
-          key="2025-1-13"
+          key="antv-g2"
           endContent={<ItemCounter number={6} />}
           startContent={
             <IconWrapper className="bg-primary/10 text-primary">
