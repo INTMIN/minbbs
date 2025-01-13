@@ -132,7 +132,7 @@ export default function List() {
         </ListboxItem>
         <ListboxItem
           key="docker"
-          endContent={<span className="text-small text-default-400">MIT</span>}
+          endContent={<ItemCounter number={12} />}
           startContent={
             <IconWrapper className="bg-danger/10 text-danger dark:text-danger-500">
               <BookIcon />
