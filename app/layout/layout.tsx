@@ -46,7 +46,7 @@ export default function App() {
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarItem>
             <Link color="foreground" href="#">
-              更多分享请点击
+              更多技术讨论分享请点击
             </Link>
           </NavbarItem>
           <NavbarItem isActive>
