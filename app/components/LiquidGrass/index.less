@@ -1,0 +1,88 @@
+:root {
+  --glass-bg: rgba(255,255,255,0.12);
+  --border: rgba(255,255,255,0.7);
+  --radius: 24px;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(1200px at 10% 20%, #6ac0ff55, transparent 60%),
+    radial-gradient(900px at 80% 70%, #ff8ec955, transparent 60%),
+    #0f1321;
+  color: #fff;
+  font-family: system-ui, -apple-system, "SF Pro", "Segoe UI", Roboto, "PingFang SC";
+}
+
+.glass-container {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+}
+
+.glass {
+  position: relative;
+  width: min(520px, 90vw);
+  padding: 28px 32px;
+  border-radius: var(--radius);
+  background: var(--glass-bg);
+  border: 1px solid var(--border);
+
+  /* 背景模糊与饱和，形成磨砂质感（Safari/Chrome 支持） */
+  backdrop-filter: blur(6px) saturate(160%);
+  -webkit-backdrop-filter: blur(6px) saturate(160%);
+
+  /* 立体与悬浮 */
+  box-shadow:
+    0 12px 32px rgba(0,0,0,0.25),         /* 外阴影 */
+    inset 0 1px 0 rgba(255,255,255,0.5),  /* 顶部内高光线 */
+    inset 0 -24px 48px rgba(255,255,255,0.06); /* 内部柔光 */
+
+  /* 只在边缘施加折射，避免中部过多变形 */
+  -webkit-mask-image: radial-gradient(closest-side, transparent 70%, black 90%);
+  mask-image: radial-gradient(closest-side, transparent 70%, black 90%);
+  filter: url(#lg-dist);
+}
+
+/* 动态高光（伪元素） */
+.glass::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius);
+  pointer-events: none;
+
+  /* 斜角高光条 */
+  background:
+    linear-gradient(130deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.14) 22%, transparent 35%),
+    linear-gradient(20deg, rgba(255,255,255,0.10), transparent 60%);
+
+  mix-blend-mode: screen;
+  opacity: 0.9;
+  animation: sheen 6s ease-in-out infinite;
+}
+
+/* 底部浮动阴影，增强悬浮感 */
+.glass::before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: -14px;
+  height: 24px;
+  filter: blur(12px);
+  background: radial-gradient(50% 100% at 50% 50%, rgba(0,0,0,0.35), transparent 70%);
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+@keyframes sheen {
+  0%, 100% { transform: translateX(-6%) translateY(-2%); }
+  50%      { transform: translateX(6%)  translateY(2%);  }
+}
+
+h3 { margin: 0 0 6px; font-weight: 700; }
+p  { margin: 0; opacity: 0.9; }
