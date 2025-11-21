@@ -6,10 +6,11 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-import { NextUIProvider } from "@nextui-org/react";
+import { HeroUIProvider } from "@heroui/react";
 
 import type { Route } from "./+types/root";
 import stylesheet from "./app.css?url";
+import { ExternalScripts } from "./ExternalScripts";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -38,11 +39,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
         <ScrollRestoration />
         <Scripts />
-        <script src="https://intmin.github.io/live2d-widget/autoload.js"></script>
-        <script
-          type="text/javascript"
-          src="https://intmin.github.io/openJS/spider.js"
-        ></script>
+        <ExternalScripts />
       </body>
     </html>
   );
@@ -50,13 +47,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return (
-    <NextUIProvider>
+    <HeroUIProvider>
       <Outlet />
-    </NextUIProvider>
+    </HeroUIProvider>
   );
 }
 
-export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
+export function ErrorBoundary({ error }: { error: unknown }) {
   let message = "Oops!";
   let details = "An unexpected error occurred.";
   let stack: string | undefined;
@@ -84,3 +81,9 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
     </main>
   );
 }
+
+export const hydrateFallback = () => (
+  <div style={{ padding: "2rem", textAlign: "center" }}>
+    <p>Loading application...</p>
+  </div>
+);

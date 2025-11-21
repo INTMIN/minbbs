@@ -9,7 +9,7 @@ import {
   NavbarMenuItem,
   Link,
   Button,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import { Outlet } from "react-router";
 
 export default function App() {
@@ -55,7 +55,7 @@ export default function App() {
               aria-current="page"
               target="_blank"
             >
-              {"-->"} INTMIN GitHub
+              {"--->"} INTMIN GitHub
             </Link>
           </NavbarItem>
         </NavbarContent>
@@ -77,8 +77,8 @@ export default function App() {
                   index === 2
                     ? "primary"
                     : index === menuItems.length - 1
-                    ? "danger"
-                    : "foreground"
+                      ? "danger"
+                      : "foreground"
                 }
                 className="w-full"
                 href="#"

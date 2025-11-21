@@ -9,31 +9,31 @@
     "typecheck": "react-router typegen && tsc --build --noEmit"
   },
   "dependencies": {
-    "@emotion/react": "^11.13.5",
-    "@emotion/styled": "^11.13.5",
-    "@nextui-org/listbox": "^2.1.27",
-    "@nextui-org/react": "^2.4.8",
-    "@react-router/node": "^7.0.1",
-    "@react-router/serve": "^7.0.1",
-    "framer-motion": "^11.12.0",
-    "highlight.js": "^11.11.1",
-    "isbot": "^5.1.17",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-markdown": "^9.0.1",
-    "react-router": "^7.0.1",
-    "rehype-highlight": "^7.0.1"
+    "@emotion/react": "11.13.5",
+    "@emotion/styled": "11.13.5",
+    "@heroui/react": "2.6.11",
+    "@heroui/listbox": "2.3.9",
+    "@react-router/node": "7.9.6",
+    "@react-router/serve": "7.9.6",
+    "framer-motion": "11.12.0",
+    "highlight.js": "11.11.1",
+    "isbot": "5.1.32",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-markdown": "9.0.1",
+    "react-router": "7.9.6",
+    "rehype-highlight": "7.0.1"
   },
   "devDependencies": {
-    "@react-router/dev": "^7.0.1",
-    "@types/node": "^22.0.0",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
+    "@react-router/dev": "7.9.6",
+    "@types/node": "24.10.1",
+    "@types/react": "18.3.1",
+    "@types/react-dom": "18.3.1",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.15",
-    "typescript": "^5.6.3",
-    "vite": "^5.4.11",
-    "vite-tsconfig-paths": "^5.1.2"
+    "tailwindcss": "3.4.15",
+    "typescript": "5.6.3",
+    "vite": "7.2.4",
+    "vite-tsconfig-paths": "5.1.2"
   }
 }
