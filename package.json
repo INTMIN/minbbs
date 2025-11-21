@@ -12,7 +12,7 @@
     "@emotion/react": "11.13.5",
     "@emotion/styled": "11.13.5",
     "@heroui/react": "2.6.11",
-    "@heroui/listbox": "2.3.9",
+    "@heroui/listbox": "2.3.26",
     "@react-router/node": "7.9.6",
     "@react-router/serve": "7.9.6",
     "framer-motion": "11.12.0",
