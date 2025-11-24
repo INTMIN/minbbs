@@ -6,7 +6,7 @@ RUN pnpm ci
 FROM node:22-alpine AS production-dependencies-env
 COPY ./package.json pnpm-lock.yaml /app/
 WORKDIR /app
-RUN pnpm ci --omit=dev
+RUN pnpm install --only=dev --frozen-lockfile
 
 FROM node:22-alpine AS build-env
 COPY . /app/
