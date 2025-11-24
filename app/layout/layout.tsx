@@ -8,7 +8,6 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
-  Button,
 } from "@heroui/react";
 import { Outlet } from "react-router";
 
@@ -30,7 +29,7 @@ export default function App() {
 
   return (
     <div>
-      <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="2xl">
+      <Navbar className="max-w-2xl mx-auto" onMenuOpenChange={setIsMenuOpen}>
         <NavbarContent>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}

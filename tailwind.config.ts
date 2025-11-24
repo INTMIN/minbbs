@@ -2,7 +2,7 @@ import { heroui } from "@heroui/theme";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: "class", // 或 "media"
+  // darkMode: "class", // 或 "media"
   content: [
     "./app/**/*.{js,jsx,ts,tsx}",
     "./index.html",

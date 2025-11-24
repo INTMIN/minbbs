@@ -9,10 +9,10 @@ import {
 import { HeroUIProvider } from "@heroui/react";
 
 import type { Route } from "./+types/root";
-// import "./app.css";
 import stylesheet from "./app.css?url";
 import { ExternalScripts } from "./ExternalScripts";
 import { Suspense } from "react";
+import "./app.css";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -87,7 +87,7 @@ export function ErrorBoundary({ error }: { error: unknown }) {
 }
 
 export const hydrateFallback = () => (
-  <div style={{ padding: "2rem", textAlign: "center" }}>
+  <div className="pt-16 p-4 text-center">
     <p>Loading application...</p>
   </div>
 );
