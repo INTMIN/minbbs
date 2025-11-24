@@ -28,7 +28,7 @@ export default function App() {
   ];
 
   return (
-    <div>
+    <div className="mt-5">
       <Navbar className="max-w-2xl mx-auto" onMenuOpenChange={setIsMenuOpen}>
         <NavbarContent>
           <NavbarMenuToggle
