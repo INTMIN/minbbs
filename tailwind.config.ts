@@ -1,9 +1,11 @@
+import { heroui } from "@heroui/theme";
 import type { Config } from "tailwindcss";
-import { heroui } from "@heroui/react";
 
-export default {
+const config: Config = {
+  darkMode: "class", // 或 "media"
   content: [
-    "./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}",
+    "./app/**/*.{js,jsx,ts,tsx}",
+    "./index.html",
     "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
@@ -22,5 +24,7 @@ export default {
       },
     },
   },
-  plugins: [heroui()],
-} satisfies Config;
+  plugins: [heroui()], // ✅ 必须是数组
+};
+
+export default config;

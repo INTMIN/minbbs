@@ -9,8 +9,10 @@ import {
 import { HeroUIProvider } from "@heroui/react";
 
 import type { Route } from "./+types/root";
+// import "./app.css";
 import stylesheet from "./app.css?url";
 import { ExternalScripts } from "./ExternalScripts";
+import { Suspense } from "react";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -47,9 +49,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return (
-    <HeroUIProvider>
-      <Outlet />
-    </HeroUIProvider>
+    <Suspense fallback={<div>Loading...</div>}>
+      <HeroUIProvider>
+        <Outlet />
+      </HeroUIProvider>
+    </Suspense>
   );
 }
 

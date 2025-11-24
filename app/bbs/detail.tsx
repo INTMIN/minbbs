@@ -5,7 +5,6 @@ const BBSDetail = (props: any) => {
   const {
     params: { id },
   } = props;
-  console.log("👍👍✌️✌️ ~ BBSDetail ~ props:", props);
   const [content, setContent] = useState("");
   useEffect(() => {
     if (id) {

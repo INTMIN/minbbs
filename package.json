@@ -11,13 +11,17 @@
   "dependencies": {
     "@emotion/react": "11.13.5",
     "@emotion/styled": "11.13.5",
-    "@heroui/react": "2.6.11",
-    "@heroui/listbox": "2.3.9",
+    "@heroui/listbox": "2.3.26",
+    "@heroui/react": "2.8.5",
+    "@heroui/theme": "^2.4.23",
     "@react-router/node": "7.9.6",
     "@react-router/serve": "7.9.6",
+    "@tailwindcss/postcss": "^4.1.17",
+    "@tailwindcss/vite": "^4.1.17",
     "framer-motion": "11.12.0",
     "highlight.js": "11.11.1",
     "isbot": "5.1.32",
+    "prettier-plugin-tailwindcss": "^0.7.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-markdown": "9.0.1",
@@ -31,9 +35,9 @@
     "@types/react-dom": "18.3.1",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
-    "tailwindcss": "3.4.15",
+    "tailwindcss": "4.1.17",
     "typescript": "5.6.3",
     "vite": "7.2.4",
-    "vite-tsconfig-paths": "5.1.2"
+    "vite-tsconfig-paths": "5.1.4"
   }
 }
