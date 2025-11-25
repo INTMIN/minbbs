@@ -10,6 +10,7 @@ import {
   Link,
 } from "@heroui/react";
 import { Outlet } from "react-router";
+import MouseLiquidGrass from "~/components/MouseLiquidGrass";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -29,6 +30,7 @@ export default function App() {
 
   return (
     <div className="mt-5">
+      <MouseLiquidGrass />
       <Navbar className="max-w-2xl mx-auto" onMenuOpenChange={setIsMenuOpen}>
         <NavbarContent>
           <NavbarMenuToggle
