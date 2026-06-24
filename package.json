@@ -31,8 +31,8 @@
   "devDependencies": {
     "@react-router/dev": "^7.18.0",
     "@types/node": "24.10.1",
-    "@types/react": "18.3.1",
-    "@types/react-dom": "18.3.1",
+    "@types/react": "18.3.31",
+    "@types/react-dom": "18.3.7",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
     "tailwindcss": "4.1.17",
