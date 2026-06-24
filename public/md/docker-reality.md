@@ -1,5 +1,6 @@
-简介
-本说明文档用于介绍 v2ray-agent 仓库中的 Docker Reality 独立脚本用法。
+## 简介
+### 本说明文档用于介绍 v2ray-agent 仓库中的 Docker Reality 独立脚本用法。
+```
     • 中文主版本脚本：shell/docker_reality.sh
     • 英文镜像脚本：shell/docker_reality_en.sh
 当前脚本定位为：
@@ -26,8 +27,10 @@
 如果你只是做验证或测试，可以通过 --data-dir 指向临时目录，例如：
 /tmp/v2ray-agent/docker/
 快捷方式与脚本自安装
+```
 直接执行：
 wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/INTMIN/v2ray-agent/master/shell/docker_reality.sh" && chmod 700 /root/docker_reality.sh && /root/docker_reality.sh
+```
 如果脚本是通过 wget 下载到临时目录后直接执行，脚本会尽量参考主脚本逻辑：
     1. 将自身迁移到 /etc/v2ray-agent/docker_reality.sh
     2. 创建快捷方式 vasmad
@@ -121,3 +124,5 @@ ghcr.io/xtls/xray-core:26.5.9
 5. 端口被占用
 如果 Vision 或 XHTTP 端口被其他程序占用，脚本会拒绝继续。
 如果端口是当前 v2ray-agent-docker 旧容器占用，脚本会识别并在重建流程中处理。
+
+```

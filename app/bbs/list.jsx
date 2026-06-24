@@ -11,6 +11,7 @@ import {
   UsersIcon,
   BookIcon,
   WatchersIcon,
+  DockerIcon
 } from "../components/Icon/MyIcon";
 import { useNavigate } from "react-router";
 
@@ -95,6 +96,13 @@ export default function List() {
       label: "docker常用命令整理",
       count: 12,
       icon: <BookIcon />,
+      iconClass: "bg-danger/10 text-danger dark:text-danger-500",
+    },
+    {
+      key: "docker-reality",
+      label: "docker-reality-部署",
+      count: 99,
+      icon: <DockerIcon />,
       iconClass: "bg-danger/10 text-danger dark:text-danger-500",
     },
   ];

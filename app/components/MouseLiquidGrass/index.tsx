@@ -3,7 +3,7 @@ import React from "react";
 import LiquidGlass from "~/components/LiquidGrass";
 
 const MouseLiquidGrass = () => {
-  const [pos, setPos] = React.useState({ x: 180, y: 50 });
+  const [pos, setPos] = React.useState({ x: 180, y: 30 });
   const dragging = React.useRef(false);
   return (
     <div
