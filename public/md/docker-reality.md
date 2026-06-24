@@ -1,6 +1,6 @@
 ## 简介
 ### 本说明文档用于介绍 v2ray-agent 仓库中的 Docker Reality 独立脚本用法。
-```
+```ts
     • 中文主版本脚本：shell/docker_reality.sh
     • 英文镜像脚本：shell/docker_reality_en.sh
 当前脚本定位为：
