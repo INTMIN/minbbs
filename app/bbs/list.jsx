@@ -100,7 +100,7 @@ export default function List() {
     },
     {
       key: "docker-reality",
-      label: "docker-reality-部署",
+      label: "docker-reality-部署文档",
       count: 99,
       icon: <DockerRealityIcon />,
       iconClass: "bg-danger/10 text-danger dark:text-danger-500",

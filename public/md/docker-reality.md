@@ -29,8 +29,10 @@
 快捷方式与脚本自安装
 ```
 直接执行：
+```ts
 wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/INTMIN/v2ray-agent/master/shell/docker_reality.sh" && chmod 700 /root/docker_reality.sh && /root/docker_reality.sh
 ```
+```ts
 如果脚本是通过 wget 下载到临时目录后直接执行，脚本会尽量参考主脚本逻辑：
     1. 将自身迁移到 /etc/v2ray-agent/docker_reality.sh
     2. 创建快捷方式 vasmad
